@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Balsamiq+Sans:ital@1&family=Exo+2&family=Fira+Sans:wght@500&family=Signika+Negative:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 15px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  padding: 0 40px;
+  padding-right: 120px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(135, 42, 163);
+  background: rgba(132, 189, 236, 0.925);
+  box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.575);
+  z-index: 1;
+}
+
+.header-btn {
+  margin-left: auto;
+}
+.header-btn a{
+  text-decoration: none;
+}
+.home {
+  position: relative;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 600px;
+  width: 100vw;
+  z-index: -1;
+}
+.homeTxt{
+    font-size: 40px;
+    font-weight: bold;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+}
+.homeImg {
+  width: 350px;
+  height: 350px;
+  grid-area: 1/1/1/1;
+  z-index: 2;
+ 
+}
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 620px;
+}
+.about-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding:20px;
+  margin:10px;
+}
+.aboutTxt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+  width:450px;
+  height: 300px;
+}
+.myimg-container{
+  width: 560px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.myimg{
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.edu-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 620px;
+}
+.edu-details{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 60px;
+}
+.edu-box{
+width: 200px;
+height: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: 1px solid black;
+border-radius: 10px;
+gap: 10px;
+padding: 10px;
+box-shadow: 10px 10px 28px -17px rgba(0,0,0,0.75);
+}
+.eduTxt{
+  display: flex;
+}
+.skills-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 40px;
+  height: 620px;
+  width: 100vw;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.skills,.tools{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+}
+.skill-img{
+  width: 100px;
+  height: 100px;
+}
+.sk-img{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.projects-container{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 10px;
+}
+.project-detail{
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 10px 10px 28px -17px rgba(0,0,0,0.75);
+  
+}
+.project-card{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.project-dependecies{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1px;
+}
+.project-dependecies span{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.projectImg{
+  width: 450px;
+  height: 250px;
+}
+.hobbies-container{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 620px;
+  align-items: center;
+  justify-content: center;
+}
+.hobbies{
+  display: flex;
+  flex-direction: column;
+}
+.hobbies-img{
+  display: flex;
+  flex-direction: column;
+}
+.hobbie-img{
+  height: 200px;
+  width: 200px;
+}
+.hobbie-name-conianer{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid ;
+  border-radius: 50%;
+  box-shadow: 10px 10px 28px -17px rgba(0,0,0,0.75);
+  gap: 35px;
+}
+.hobbies-img{
+ display: flex;
+ flex-direction: row;
+}
+.hobbies{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.hobbietxtContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 40px;
+}
+.otherHobbies{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
