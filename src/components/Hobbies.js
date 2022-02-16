@@ -16,7 +16,7 @@ export function Hobbies() {
         <h4>Adiction In</h4>
         <div className="otherHobbies">
         <div>
-          <label>E-Sports</label>
+          <label>Movies</label>
           <img src={tv} alt="hobbie-img" className="hobbie-img" />
         </div>
         <div>

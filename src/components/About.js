@@ -9,14 +9,14 @@ import { Link } from "@mui/material";
 export function About() {
   return (
     <div id="about" className="about-container">
-      <p>A Little Bit About Me</p>
+      <p style={{color:'violet',fontSize:"30px"}}>A Little Bit About Me</p>
       <div className="about-content">
         <div className="myimg-container">
           <img src={myimg} alt="img" className="myimg" />
         </div>
         <div className="aboutTxt">
-          <p>Hey there! My Name is Manokaran R</p>
-          <p>
+          <p><b>Hey there! My Name is Manokaran R</b></p>
+          <p >
             I'm a Trichy based tech enthusiast & a Programmer who loves
             designing and Animate new Things and devlopment. Lot of Curious in
             Designing ,mostly self taught & a quick learner who flourishes under

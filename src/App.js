@@ -11,14 +11,6 @@ import { Hobbies } from "./components/Hobbies.js";
 function App() {
   return (
     <div className="App">
-      <Container />
-    </div>
-  );
-}
-
-function Container() {
-  return (
-    <div>
       <Header />
       <Home/>
       <About />
@@ -29,5 +21,4 @@ function Container() {
     </div>
   );
 }
-
 export default App;
