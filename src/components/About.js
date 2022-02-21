@@ -52,7 +52,7 @@ export function About() {
               target="_blank"
               underline="none"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1O8iLgBPyAwF_Gf8nNV5TzwfqIme1sT9I/view?usp=sharing"
+              href="https://drive.google.com/file/d/1pRLEKwHPvnUrS9-CHODvGLQdMsq0SXjW/view?usp=sharing"
             >
               Resume
             </Link>
