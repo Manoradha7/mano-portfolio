@@ -361,5 +361,71 @@ body {
     align-items: center;
     justify-content: center;
     width: 300px;
+    height:fit-content;
   }
+  .homeTxt{
+    font-size: 29px;
+    font-weight: bold;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .home-img-continer{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+  }
+  .aboutTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 316px;
+    height: 300px;
+}
+.edu-container {
+  display: flex;
+  flex-direction: column;
+  height: 1134px;
+}
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width:280px;
+  height: 2000px;
+}
+.project-detail{
+  height: 500px;
+}
+.project-dependecies{
+  display: flex;
+  flex-direction: column;
+}
+.hobbies-container{
+  height: 2050px;
+}
+.hobbietxtContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+}
+.otherHobbies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.projectImg {
+  width: 322px;
+  height: 250px;
+}
 }
