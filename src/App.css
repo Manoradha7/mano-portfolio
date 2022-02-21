@@ -400,8 +400,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width:280px;
+  width:3350px;
   height: 2000px;
+  padding-left: 50px;
 }
 .project-detail{
   height: 500px;
