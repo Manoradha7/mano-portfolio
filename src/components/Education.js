@@ -1,12 +1,43 @@
 import * as React from "react";
-import{useRef} from 'react';
+
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import AnimatedProgressProvider from "./AnimatedProgressProvider";
+import { easeQuadInOut } from "d3-ease";
+
+
 export function Education() {
   return (
     <div id="education" className="edu-container">
       <p className="eduHead">Educational History</p>
       <div className="edu-details">
         <div className="edu-box">
-          <ProgressBar value={94.2}/>
+          <div style={{ width: 100, height: 100 }}>
+            <AnimatedProgressProvider
+              valueStart={0}
+              valueEnd={94.2}
+              duration={4}
+              easingFunction={easeQuadInOut}
+              
+            >
+              {(value) => {
+                const roundedValue = value;
+                return (
+                  <CircularProgressbar
+                    value={value}
+                    text={`${roundedValue}%`}
+                    background
+              backgroundPadding={3}
+              styles={buildStyles({
+                backgroundColor: "rgba(211, 168, 113, 0.808)",
+                textColor: "black",
+                pathColor: "#d81212",
+              })}
+                  />
+                );
+              }}
+            </AnimatedProgressProvider>
+          </div>
           <h3>Class X</h3>
           <h4>2014-2015</h4>
           <h3 className="eduTxt">
@@ -14,7 +45,32 @@ export function Education() {
           </h3>
         </div>
         <div className="edu-box">
-        <ProgressBar value={82.4}/>
+        <div style={{ width: 100, height: 100 }}>
+            <AnimatedProgressProvider
+              valueStart={0}
+              valueEnd={82.4}
+              duration={4}
+              easingFunction={easeQuadInOut}
+              
+            >
+              {(value) => {
+                const roundedValue = value;
+                return (
+                  <CircularProgressbar
+                    value={value}
+                    text={`${roundedValue}%`}
+                    background
+              backgroundPadding={3}
+              styles={buildStyles({
+                backgroundColor: "rgba(211, 168, 113, 0.808)",
+                textColor: "black",
+                pathColor: "#d81212",
+              })}
+                  />
+                );
+              }}
+            </AnimatedProgressProvider>
+          </div>
           <h3>Class XII</h3>
           <h4>2016-2017</h4>
           <h3 className="eduTxt">
@@ -22,7 +78,32 @@ export function Education() {
           </h3>
         </div>
         <div className="edu-box">
-        <ProgressBar value={75.6}/>
+        <div style={{ width: 100, height: 100 }}>
+            <AnimatedProgressProvider
+              valueStart={0}
+              valueEnd={75.6}
+              duration={4}
+              easingFunction={easeQuadInOut}
+              
+            >
+              {(value) => {
+                const roundedValue = value;
+                return (
+                  <CircularProgressbar
+                    value={value}
+                    text={`${roundedValue}%`}
+                    background
+              backgroundPadding={3}
+              styles={buildStyles({
+                backgroundColor: "rgba(211, 168, 113, 0.808)",
+                textColor: "black",
+                pathColor: "#d81212",
+              })}
+                  />
+                );
+              }}
+            </AnimatedProgressProvider>
+          </div>
           <h3>BE-CSE</h3>
           <h4>2017-2021</h4>
           <h3 className="eduTxt">
@@ -34,27 +115,4 @@ export function Education() {
       </div>
     </div>
   );
-}
-
-function ProgressBar({value}){
-
-  let textRef = useRef();
-  const circularRef = useRef();
-  let progressValue = 0;
-  let progressEndValue = value;
-  let speed = 200;
-  let progress = setInterval(()=>{
-    progressValue++;
-    textRef = `${progressValue}%`;
-    // ProgressBar.style.background = `conic-gradient(
-    //   #4d5bf9 ${progressValue*3.6}deg,
-    //   #cadcff ${progressValue*3.6}deg
-    // )`;
-    if(progressValue === progressEndValue){
-      clearInterval(progress);
-    }
-  },speed);
-  return(
-    <div className="circular-progress" ref={circularRef}><div ref={textRef} className="value-container">{value}</div></div>
-  )
 }

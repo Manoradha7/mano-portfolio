@@ -13,6 +13,7 @@ export function Header() {
         <Button variant="text"  ><a data-scroll href="#skills">Skills</a></Button>
         <Button variant="text"  ><a data-scroll href="#projects">Projects</a></Button>
         <Button variant="text" ><a data-scroll href="#hobbies">Hobbies</a></Button>
+        <Button variant="text" ><a data-scroll href="#contact">Contact</a></Button>
       </div>
     </div>
   );

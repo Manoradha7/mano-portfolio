@@ -29,7 +29,7 @@ body {
   box-shadow: 0 8px 30px 0 rgba(94, 99, 23, 0.575);
   z-index: 1;
 }
-.header-icon{
+.header-icon {
   width: 45px;
   height: 40px;
 }
@@ -81,8 +81,8 @@ body {
   height: 620px;
   width: 100%;
 }
-.about-container p{
- font-size: 20px;
+.about-container p {
+  font-size: 20px;
 }
 .about-content {
   display: flex;
@@ -126,7 +126,7 @@ body {
   margin-top: 20px;
   gap: 60px;
 }
-.eduHead{
+.eduHead {
   font-size: 30px;
   color: violet;
 }
@@ -145,8 +145,7 @@ body {
   box-shadow: 10px 10px 28px -17px rgba(0, 0, 0, 0.75);
 }
 
-
-.circular-progress{
+.circular-progress {
   position: relative;
   height: 100px;
   width: 100px;
@@ -155,15 +154,15 @@ body {
   display: grid;
   place-items: center;
 }
-.circular-progress:before{
-  content: '';
+.circular-progress:before {
+  content: "";
   position: absolute;
   height: 84%;
   width: 84%;
   background-color: rgba(211, 168, 113, 0.808);
   border-radius: 50%;
 }
-.value-container{
+.value-container {
   position: relative;
   font-size: 20px;
   color: #231c3d;
@@ -183,7 +182,7 @@ body {
   margin-top: 20px;
   padding-top: 20px;
 }
-.skills-container h3{
+.skills-container h3 {
   font-size: 25px;
 }
 .skills,
@@ -212,7 +211,7 @@ body {
   padding: 25px;
   gap: 10px;
 }
-.projects-container h3{
+.projects-container h3 {
   font-size: 25px;
 }
 .project-detail {
@@ -276,7 +275,7 @@ body {
   box-shadow: 10px 10px 28px -17px rgba(170, 15, 15, 0.75);
   gap: 35px;
 }
-.hobbie-name-conianer:hover{
+.hobbie-name-conianer:hover {
   background-color: #884d15;
 }
 .hobbies-img {
@@ -284,13 +283,12 @@ body {
   flex-direction: column;
   align-items: center;
   height: 300px;
-  gap: 10px;
+  gap: 35px;
 }
 .hobbies {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .hobbietxtContainer {
   display: flex;
@@ -303,67 +301,125 @@ body {
   flex-direction: row;
   gap: 20px;
 }
+.skills-container h3,
+.projects-container h3,
+.hobbies-container h3,
+.contact-container h3 {
+  color: violet;
+}
+.hobbie{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.c-phone,.c-mail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 100px;
+  background: #e3a063;
+  box-shadow: 21px 21px 49px -22px rgba(227,46,46,0.75);
+  border-radius: 15px;
+}
+.c-mobile-img{
+  width: 50px;
+  height: 50px;
+}
+.c-mail a{
+  text-decoration: none;
+  color: black;
+}
 
-@media (max-width:767px){
-  .navbar{
-    max-width: 767px ;
+@media (max-width: 1000px) {
+  .navbar {
+    max-width: 1000px;
     min-width: 480px;
+    width: 100%;
   }
-  .home{
+  .home {
     display: flex;
     flex-direction: column;
     height: 660px;
   }
-  .about-container{
+  .about-container {
     display: flex;
     flex-direction: column;
     height: 720px;
   }
-  .about-content{
+  .about-content {
     display: flex;
     flex-direction: column;
   }
-  .myimg-container{
+  .myimg-container {
     width: 356px;
   }
-  .edu-container{
+  .edu-container {
     display: flex;
     flex-direction: column;
     height: 1012px;
   }
-  .edu-details{
+  .edu-details {
     display: flex;
     flex-direction: column;
   }
-  .skills,.tools{
+  .skills,
+  .tools {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .hobbies-container{
+  .hobbies-container {
     display: flex;
     flex-direction: column;
   }
-  .hobbie-name-conianer:hover{
+  .hobbie-name-conianer:hover {
     background-color: #884d15;
   }
+  .otherHobbies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 214px;
+    margin-bottom: 40px;
 }
-@media (max-width:480px){
-  .skills,.tools{
+}
+@media (max-width: 480px) {
+  .skills,
+  .tools {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .skills-container{
-    height: 900px;
-  }
-  .projects-container{
+  .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 300px;
-    height:fit-content;
+    height: 2200px;
   }
-  .homeTxt{
+  .homeTxt {
     font-size: 29px;
     font-weight: bold;
     width: 450px;
@@ -374,7 +430,7 @@ body {
     justify-content: center;
     z-index: 2;
   }
-  .home-img-continer{
+  .home-img-continer {
     display: flex;
     align-items: center;
     width: 400px;
@@ -387,46 +443,84 @@ body {
     gap: 15px;
     width: 316px;
     height: 300px;
+  }
+  .edu-container {
+    display: flex;
+    flex-direction: column;
+    height: 1134px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 2000px;
+    padding-left: 70px;
+  }
+  .project-detail {
+    height: 500px;
+  }
+  .project-dependecies {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies-container {
+    height: 1600px;
+  }
+  .hobbietxtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+  }
+  .otherHobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .projectImg {
+    width: 322px;
+    height: 250px;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding-left: 138px;
+    height: 820px;
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .hobbie-img {
+    height: 100px;
+    width: 100px;
 }
-.edu-container {
+.otherHobbies{
+  display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.contact-container {
   display: flex;
   flex-direction: column;
-  height: 1134px;
-}
-.project-card {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  width:350px;
-  height: 2000px;
-  padding-left: 50px;
+  gap: 40px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  height: 1600px;
 }
-.project-detail{
-  height: 500px;
-}
-.project-dependecies{
+.contact{
   display: flex;
   flex-direction: column;
-}
-.hobbies-container{
-  height: 2050px;
-}
-.hobbietxtContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 40px;
-}
-.otherHobbies {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.projectImg {
-  width: 322px;
-  height: 250px;
 }
 }
