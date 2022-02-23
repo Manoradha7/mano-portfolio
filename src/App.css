@@ -466,7 +466,7 @@ body {
     padding-left: 70px;
   }
   .project-detail {
-    height: 500px;
+    height: 400px;
   }
   .project-dependecies {
     display: flex;
@@ -527,5 +527,18 @@ body {
 .contact{
   display: flex;
   flex-direction: column;
+}
+.project-dependecies{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.project-dependecies span{
+  width: fit-content;
+}
+.about-container{
+  height: 100%;
+  margin-top: 50px;
 }
 }
