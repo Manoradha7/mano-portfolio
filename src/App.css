@@ -41,6 +41,10 @@ body {
   text-decoration: none;
   color: blanchedalmond;
 }
+.drawer-a{
+  text-decoration: none;
+  color:#533f08
+}
 .home {
   position: relative;
   display: grid;
@@ -423,6 +427,10 @@ body {
     justify-content: center;
     width: 300px;
     height: fit-content;
+    margin-top: 45px;
+  }
+  .projects-container h3{
+    padding-left: 125px;
   }
   .homeTxt {
     font-size: 29px;

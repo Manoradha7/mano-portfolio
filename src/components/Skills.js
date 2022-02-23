@@ -10,6 +10,7 @@ import ntf from "../img/netlify.png";
 import vsc from "../img/vs code.png";
 import psm from "../img/postman.png";
 import ai from '../img/ai.png';
+import hk from '../img/herokku.png';
 
 export function Skills() {
   return (
@@ -50,6 +51,10 @@ export function Skills() {
         <div className="sk-img">
           <label>Netlify</label>
           <img src={ntf} alt="img" className="skill-img" />
+        </div>
+        <div className="sk-img">
+          <label>herokku</label>
+          <img src={hk} alt="img" className="skill-img" />
         </div>
         <div className="sk-img">
           <label>Vs Code</label>

@@ -52,6 +52,7 @@ export function Header() {
           }}
           anchor="right"
           open={opened}
+          className='drawer'
         >
           <IconButton
             color="inherit"
@@ -67,37 +68,37 @@ export function Header() {
               height: "3rem",
             }}
           >
-            <a data-scroll href="#home">
+            <a data-scroll href="#home" className="drawer-a">
               Home
             </a>
           </Button>
           <Button sx={{ height: "3rem" }}>
-            <a data-scroll href="#about">
+            <a data-scroll href="#about" className="drawer-a">
               About
             </a>
           </Button>
           <Button sx={{ height: "3rem" }}>
-            <a data-scroll href="#education">
+            <a data-scroll href="#education" className="drawer-a">
               Education
             </a>
           </Button>
           <Button sx={{ color: "inherit" }}>
-            <a data-scroll href="#skills">
+            <a data-scroll href="#skills" className="drawer-a">
               Skills
             </a>
           </Button>
           <Button sx={{ height: "3rem" }}>
-            <a data-scroll href="#projects">
+            <a data-scroll href="#projects" className="drawer-a">
               Projects
             </a>
           </Button>  
           <Button sx={{ height: "3rem" }}>
-            <a data-scroll href="#hobbies">
+            <a data-scroll href="#hobbies" className="drawer-a">
               Hobbies
             </a>
           </Button>          
           <Button sx={{ height: "3rem" }}>
-            <a data-scroll href="#contact">
+            <a data-scroll href="#contact" className="drawer-a">
               Contact
             </a>
           </Button>
