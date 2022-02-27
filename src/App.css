@@ -386,6 +386,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .skills-container{
+    margin-top: 104px;
+  }
   .hobbies-container {
     display: flex;
     flex-direction: column;
@@ -448,6 +451,9 @@ body {
     align-items: center;
     width: 400px;
     height: 500px;
+  }
+  .homeImg{
+    padding-left: 30px;
   }
   .aboutTxt {
     display: flex;
