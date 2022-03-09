@@ -71,7 +71,7 @@ body {
   z-index: 2;
 }
 .homeImg {
-  width: 350px;
+  width: 450px;
   height: 350px;
   grid-area: 1/1/1/1;
   z-index: 2;
@@ -86,7 +86,9 @@ body {
   width: 100%;
 }
 .about-container p {
-  font-size: 20px;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
 }
 .about-content {
   display: flex;
@@ -101,7 +103,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  width: 450px;
+  width: 800px;
   height: 300px;
 }
 .myimg-container {
@@ -129,6 +131,7 @@ body {
   flex-direction: row;
   margin-top: 20px;
   gap: 60px;
+  
 }
 .eduHead {
   font-size: 30px;
@@ -141,14 +144,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid rgb(199, 181, 21);
   border-radius: 10px;
   color: rgb(56, 26, 19);
   gap: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 28px -17px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  box-shadow: -6px 9px 24px 0px rgba(0,0,0,0.75);
 }
-
+.edu-box:hover{
+background: #dba50e;
+color:rgb(54, 54, 54);
+width: 260px;
+transition: width  1s;
+cursor: pointer;
+}
 .circular-progress {
   position: relative;
   height: 100px;
@@ -193,10 +203,12 @@ body {
 .tools {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
+
 .skill-img {
   width: 100px;
   height: 100px;
@@ -218,11 +230,20 @@ body {
 .projects-container h3 {
   font-size: 25px;
 }
+.project-detail h4{
+  font-size: 20px;
+  color: crimson;
+}
 .project-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 450px;
-  height: 350px;
+  height: 380px;
   object-fit: cover;
-  box-shadow: 10px 10px 28px -17px rgba(0, 0, 0, 0.75);
+  gap: 10px;
+  background-color: rgb(255, 196, 0);
+  box-shadow: -6px 9px 24px 0px rgba(0,0,0,0.75);
 }
 .project-card {
   display: flex;
@@ -231,17 +252,27 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  
 }
 .project-dependecies {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 1px;
+  gap: 5px;
 }
 .project-dependecies span {
-  border: 1px solid black;
+  border: 1px solid rgb(82, 81, 81);
   border-radius: 10px;
   padding: 5px;
+  background: #e7aa00;
+  color: #421414;
+  box-shadow: -7px 9px 49px -4px rgba(0,0,0,0.75);
+}
+.project-btn{
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
 }
 
 .projectImg {
@@ -329,7 +360,7 @@ body {
   flex-direction: row;
   gap: 10px;
 }
-.c-phone,.c-mail{
+.c-phone,.c-mail,.c-git,.c-linkedin{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,6 +399,10 @@ body {
   .about-content {
     display: flex;
     flex-direction: column;
+  }
+  .aboutTxt{
+    max-width: 600px;
+ width: 480px;
   }
   .myimg-container {
     width: 356px;
@@ -408,20 +443,27 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin-top: 214px;
+    margin-top: 110px;
     margin-bottom: 40px;
+    height: fit-content;
+}
+.contact{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ 
+}
 }
 @media (max-width:599px){
   .header-btn-1{
     display: none;
   }
 }
-}
+
 @media (max-width: 480px) {
   .skills,
   .tools {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
   }
   .projects-container {
     display: flex;
@@ -454,6 +496,8 @@ body {
   }
   .homeImg{
     padding-left: 30px;
+    width: 350px;
+    height: 275px;
   }
   .aboutTxt {
     display: flex;
@@ -463,10 +507,13 @@ body {
     width: 316px;
     height: 300px;
   }
+  .aboutTxt p{
+    font-size: 20px;
+  }
   .edu-container {
     display: flex;
     flex-direction: column;
-    height: 1134px;
+    height: fit-content;
   }
   .project-card {
     display: flex;
@@ -511,7 +558,7 @@ body {
     justify-content: center;
     gap: 45px;
     padding-left: 138px;
-    height: 820px;
+    height: fit-content;
     width: 300px;
     margin-top: 20px;
     padding-top: 20px;
@@ -541,15 +588,25 @@ body {
 .contact{
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  height: fit-content;
 }
 .project-dependecies{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 .project-dependecies span{
   width: fit-content;
+}
+.project-btn{
+  display: flex;
+  flex-direction: column;
+  
+}
+.project-detail{
+  display: flex;
+  gap: 10px;
 }
 .about-container{
   height: 100%;

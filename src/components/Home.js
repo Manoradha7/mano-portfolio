@@ -1,5 +1,5 @@
 import * as React from "react";
-import img1 from "../img/img2.png";
+import img1 from "../img/fsd2.gif";
 import { init } from 'ityped';
 import { useEffect,useRef } from "react";
 

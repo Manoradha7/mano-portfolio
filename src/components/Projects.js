@@ -5,51 +5,56 @@ import shasha from "../img/shasha.png";
 import movie from "../img/movie.png";
 import url from "../img/urlshort.png";
 import Card from "@mui/material/Card";
-import IconButton from "@mui/material/IconButton";
+import Button from '@mui/material/Button';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import { Link } from "@mui/material";
-// import Tooltip from '@mui/material/Tooltip';
 
 export function Projects() {
   return (
     <div id="projects" className="projects-container">
       <h3>Projects</h3>
       <div className="project-card">
-        <Card className="project-detail" sx={{borderRadius:"10px", boxShadow:" 10px 10px 28px -17px rgba(0,0,0,0.75)" }}>
+        <Card
+          className="project-detail"
+          sx={{
+            boxShadow:20,
+            borderRadius: "10px",
+            backgroundColor:"lightgrey"
+          }}
+        >
           <img src={mom} alt="project-img" className="projectImg" />
-          <h5>Money Manager</h5>
+          <h4>Money Manager</h4>
           <div className="project-btn">
-            <IconButton aria-label="github" >
-            <Link
-                color="#0049af"
+            <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
+              <Link
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/money-manager-app-fronend-task"
-              >
-              <GitHubIcon /></Link>
-            </IconButton>
-            <IconButton aria-label="github">
-            <Link
-                color="#0049af"
+              >Frontend</Link>
+              </Button>
+
+            <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}}  startIcon={<GitHubIcon />}>
+              <Link
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/money-manager-backend-api"
               >
-              <GitHubIcon /></Link>
-            </IconButton>
-            <IconButton aria-label="live">
-            <Link
-                color="#0049af"
+              Backend</Link>
+              </Button>
+              <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}}  startIcon={<LanguageIcon />}>
+              <Link
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://nifty-heyrovsky-ac9f1f.netlify.app"
-              >
-              <LanguageIcon /></Link>
-            </IconButton>
+              >Live</Link>
+              </Button>
           </div>
           <div className="project-dependecies">
             <span>Html5</span>
@@ -60,40 +65,46 @@ export function Projects() {
             <span>Nodejs</span>
           </div>
         </Card>
-        <Card className="project-detail" sx={{borderRadius:"10px", boxShadow:" 10px 10px 28px -17px rgba(0,0,0,0.75)" }}>
+        <Card
+          className="project-detail"
+          sx={{
+            boxShadow:20,
+            borderRadius: "10px",
+            backgroundColor:"lightgrey"}}
+        >
           <img src={faaza} alt="img" className="projectImg" />
-          <h5>Faaza Store</h5>
+          <h4>Faaza Store</h4>
           <div className="project-btn">
-            <IconButton aria-label="github">
+          <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/faaza"
               >
-              <GitHubIcon /></Link>
-            </IconButton>
-            <IconButton aria-label="github">
+              Frontend</Link>
+            </Button>
+
+            <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/faaza-api"
               >
-              <GitHubIcon /></Link>
-            </IconButton>
-            <IconButton aria-label="live">
+              Backend</Link>
+              </Button>
+              <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<LanguageIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://faaza-store.netlify.app/"
-              >
-              <LanguageIcon /></Link>
-            </IconButton>
+              >Live</Link>
+              </Button>
           </div>
           <div className="project-dependecies">
             <span>Html5</span>
@@ -104,43 +115,46 @@ export function Projects() {
             <span>Nodejs</span>
           </div>
         </Card>
-        <Card className="project-detail" sx={{borderRadius:"10px", boxShadow:" 10px 10px 28px -17px rgba(0,0,0,0.75)" }}>
+        <Card
+          className="project-detail"
+          sx={{
+            boxShadow:20,
+            borderRadius: "10px",
+            backgroundColor:"lightgrey"}}
+        >
           <img src={shasha} alt="img" className="projectImg" />
-          <h5>Shasha Player</h5>
+          <h4>Shasha Player</h4>
           <div className="project-btn">
-            <IconButton aria-label="github">
+          <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/online-music-player-react"
               >
-              <GitHubIcon />
-              </Link>
-            </IconButton>
-            <IconButton aria-label="github">
+              Frontend</Link>
+            </Button>
+
+            <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/online-music-player-nodejs"
               >
-              <GitHubIcon />
-              </Link>
-            </IconButton>
-            <IconButton aria-label="live">
+              Backend</Link>
+              </Button>
+              <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<LanguageIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://nostalgic-kilby-9dd1c7.netlify.app"
-              >
-              <LanguageIcon />
-              </Link>
-            </IconButton>
+              >Live</Link>
+              </Button>
           </div>
           <div className="project-dependecies">
             <span>Html5</span>
@@ -151,43 +165,46 @@ export function Projects() {
             <span>Nodejs</span>
           </div>
         </Card>
-        <Card className="project-detail" sx={{borderRadius:"10px", boxShadow:" 10px 10px 28px -17px rgba(0,0,0,0.75)" }}>
+        <Card
+          className="project-detail"
+          sx={{
+            boxShadow:20,
+            borderRadius: "10px",
+            backgroundColor:"lightgrey"}}
+        >
           <img src={movie} alt="img" className="projectImg" />
-          <h5>Movie App</h5>
+          <h4>Movie App</h4>
           <div className="project-btn">
-            <IconButton aria-label="github">
+          <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/movieapp"
               >
-              <GitHubIcon /></Link>
-            </IconButton>
-            <IconButton aria-label="github">
+              Frontend</Link>
+            </Button>
+
+            <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/Movie-node-js"
               >
-              <GitHubIcon />
-              </Link>
-
-            </IconButton>
-            <IconButton aria-label="live">
+              Backend</Link>
+              </Button>
+              <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<LanguageIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://determined-panini-70aeee.netlify.app"
-              >
-              <LanguageIcon />
-              </Link>
-            </IconButton>
+              >Live</Link>
+              </Button>
           </div>
           <div className="project-dependecies">
             <span>Html5</span>
@@ -198,43 +215,48 @@ export function Projects() {
             <span>Nodejs</span>
           </div>
         </Card>
-        <Card className="project-detail" sx={{borderRadius:"10px", boxShadow:" 10px 10px 28px -17px rgba(0,0,0,0.75)" }}>
+        <Card
+          className="project-detail"
+          sx={{
+            boxShadow:20,
+            borderRadius: "10px",
+            backgroundColor:"lightgrey"
+          }}
+        >
           <img src={url} alt="img" className="projectImg" />
-          <h5>Url Shorter</h5>
+          <h4>Url Shorter</h4>
           <div className="project-btn">
-            <IconButton aria-label="github">
+
+          <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/url-shortner-react-api"
               >
-              <GitHubIcon />
-              </Link>
-            </IconButton>
-            <IconButton aria-label="github">
+              Frontend</Link>
+            </Button>
+
+            <Button variant="contained" color="warning" sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<GitHubIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://github.com/Manoradha7/URL-Shortner-API"
               >
-              <GitHubIcon />
-              </Link>
-            </IconButton>
-            <IconButton aria-label="live">
+              Backend</Link>
+              </Button>
+              <Button variant="contained"  color="warning"  sx={{boxShadow: 15,borderRadius:"25px",backgroundColor:"rgb(168, 129, 1)"}} startIcon={<LanguageIcon />}>
               <Link
-                color="#0049af"
+                color="white"
                 target="_blank"
                 underline="none"
                 rel="noreferrer"
                 href="https://relaxed-fermat-816b32.netlify.app"
-              >
-              <LanguageIcon />
-              </Link>
-            </IconButton>
+              >Live</Link>
+              </Button>
           </div>
           <div className="project-dependecies">
             <span>Html5</span>
