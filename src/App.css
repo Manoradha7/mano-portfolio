@@ -155,8 +155,6 @@ body {
 .edu-box:hover{
 background: #dba50e;
 color:rgb(54, 54, 54);
-width: 260px;
-transition: width  1s;
 cursor: pointer;
 }
 .circular-progress {
